@@ -1,0 +1,40 @@
+.selectContainer {
+    /*&::before {
+        content: "Selecione o assunto";
+        position: absolute;
+        width: 25%;
+        background-color: white;
+        color: rgb(16, 84, 121);
+    }*/
+}
+
+.label {
+    color: rgb(16, 84, 121);
+}
+
+.select {
+    font-size: 1em;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: rgb(16, 84, 121);
+    width: 100%;
+    option {
+        color: black;
+        padding-left: 1em;
+    }
+    .defaultOption {
+        display: none;
+    }
+}
+
+.selected {
+    color: rgb(16, 84, 121) !important;
+}
+
+.input {
+    border: 2px solid gray;
+    border-radius: 0.15em;
+    padding-left: 0.7em;
+    width: 100%;
+}

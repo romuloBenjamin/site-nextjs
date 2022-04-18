@@ -1,0 +1,23 @@
+.suppliers {
+    padding-top: 2rem;
+    background-color: rgb(63, 115, 160);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    .suppliersList {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: {
+            top: 2rem;
+            bottom: 2rem;
+        }
+        .supplier {
+            width: 16rem;
+            background-color: white;
+            user-select: none;
+        }
+    }
+}

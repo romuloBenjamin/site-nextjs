@@ -1,0 +1,39 @@
+$text-color-light: white;
+$secondary-color: rgb(48, 83, 126);
+
+.footer {
+    color: $text-color-light;
+    background-color: $secondary-color;
+    .listContainer {
+        width: 96%;
+        padding-top: 3.2rem;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .listTitle {
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            font-size: 2.8rem;
+            padding-bottom: 1rem;
+            font-family: "Metropolis Regular";
+        }
+        li {
+            font-family: "Metropolis Light";
+            line-height: 3rem;
+            font-size: 2.2rem;
+            border-color: rgb(189, 189, 189);
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .listItem {
+            margin-bottom: 1.8rem;
+        }
+        .address {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+    }
+}

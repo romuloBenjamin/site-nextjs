@@ -1,0 +1,42 @@
+.featuredProducts {
+    //background-image: linear-gradient(whitesmoke, rgba(234, 234, 234, 0.98));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .productsList {
+        //display: grid;
+        //grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+        //justify-items: center;
+        padding: {
+            top: 8rem;
+            bottom: 6rem;
+        }
+        width: 80%;
+        .productPreviewWrapper {
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        .swiperButtonPrev,
+        .swiperButtonNext {
+            position: absolute;
+            margin: auto;
+            z-index: 10;
+            max-width: max-content;
+            max-height: max-content;
+            line-height: 0;
+            font-size: 8rem;
+            color: rgb(179, 179, 179);
+            cursor: pointer;
+            margin-top: 20rem;
+        }
+        .swiperButtonNext {
+            right: 0;
+            margin-right: 9rem;
+        }
+        .swiperButtonPrev {
+            left: 0;
+            margin-left: 9rem;
+        }
+    }
+}

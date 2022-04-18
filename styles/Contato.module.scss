@@ -1,0 +1,32 @@
+.title {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+    font-size: 4.5em;
+    font-family: "Metropolis Bold";
+    color: rgb(16, 84, 121);
+}
+
+.content {
+    display: flex;
+    align-self: center;
+    width: 94%;
+    margin-bottom: 10em;
+}
+
+.button {
+    align-self: flex-end;
+    margin: auto 0;
+    margin-bottom: 0;
+}
+
+.card {
+    flex: 1;
+    margin: 0.6em;
+    width: auto;
+    min-height: 11em;
+}
+
+.cardContainer {
+    flex: 1.1;
+}

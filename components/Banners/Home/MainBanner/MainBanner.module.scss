@@ -1,0 +1,33 @@
+.mainBanner {
+    .bannerImage {
+        height: 500px;
+        width: 1920px;
+    }
+    .swiperButtonPrev,
+    .swiperButtonNext {
+        position: absolute;
+        margin: auto;
+        z-index: 10;
+        max-width: max-content;
+        max-height: max-content;
+        line-height: 0;
+        font-size: 8rem;
+        color: rgb(179, 179, 179);
+        cursor: pointer;
+        margin-top: 20rem;
+    }
+    .swiperButtonNext {
+        right: 0;
+        margin-right: 9rem;
+    }
+    .swiperButtonPrev {
+        left: 0;
+        margin-left: 9rem;
+    }
+}
+
+.bulletCurrentItem {
+    //height: 0.7em;
+    //width: 5em;
+    //border-radius: 0.3em;
+}

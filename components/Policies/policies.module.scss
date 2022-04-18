@@ -1,0 +1,35 @@
+$container: 90%;
+
+.politicsModule{
+    width: $container;
+    display: flex;
+    justify-content: space-between;
+    margin: {
+        top: 15rem;
+        bottom: 0;
+        left: auto;
+        right: auto;
+    };
+    *{
+        display: flex !important;
+    }
+}
+
+.containerPoliticas{
+    min-width: 70%;
+    max-width: 75%;
+    padding: {
+        left: 8rem;
+        right: 8rem;
+    };
+    h2{
+        margin: {
+            top: 5rem;
+            bottom: 5rem;            
+        };        
+    }
+    p{
+        margin: 0;
+        text-align: justify;
+    }
+}

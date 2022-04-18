@@ -1,0 +1,129 @@
+$borderColorMenuSide: #858585;
+$backgroundMenuLine: #f5f5f5;
+$container: 90%;
+.menuHeaderLine, .menuHeaderLineConteiner, .menuMobile, .menuSpread, .menuPageContainer{
+    position: relative;
+    display: grid;
+    z-index: +1;
+}
+//Menu Principal
+.menuHeaderLine{
+    box-shadow: 0 2px 5px -3px rgba(0, 0, 0, 0.8);
+    background-color: $backgroundMenuLine;
+    width: 100%;
+    height: 5rem; 
+    .menuHeaderLineConteiner{
+        width: $container;
+        margin: 0 auto;
+        //Grid System
+        grid-template-areas: 
+        "a b c d";
+        grid-template-columns: 10% 15% 60% 15%;
+    }
+}
+//Menu Mobile
+.menuMobile{
+    grid-area: a;
+    .mobileFragments{
+        display: flex;        
+        justify-content: start;
+        align-items: center;
+        button{
+            font-family: "Metropolis Bold";
+            color: rgb(16,84,121);
+            padding-left: 0;
+            //Grid System
+            display: grid;
+            grid-template-areas: 
+            "a b";
+            grid-template-rows: 1% 98% 1%;
+            span{
+                grid-area: a;
+                justify-content: initial;
+                display: flex;
+                font-size: 4rem;
+                svg{
+                    font-size: inherit !important;
+                }
+            }
+            p{
+                grid-area: b;
+                margin: 0;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+//Menu Spread
+.menuSpread{
+    grid-area: c;
+    .menuSpreadContainer{
+        padding: {
+            top: 0;
+            bottom: 0;
+            left: 5rem;
+            right: 5rem;
+        };
+
+        //Grid System
+        display: grid;
+        grid-template-areas: "a b c d e";
+        grid-template-columns: minmax(0%, auto);
+        div:last-child{
+            span{
+                &::after{
+                    border: none !important;
+                }
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            font-family: "Metropolis Regular";
+            font-size: 2.5rem;
+            color: rgb(16, 84, 121);
+            span{
+                font-family: inherit !important;
+                font-size: inherit !important;
+                color: inherit !important;
+                margin-bottom: .5rem;
+                &::after{
+                    content: "";
+                    width: 1px;
+                    height: 10px;
+                    display: inline;
+                    margin-left: 2rem;
+                    border-left: 2px solid rgb(16, 84, 121);
+                }
+            }
+        }
+    }
+}
+//Menu Lateral
+.menuPageContainer{
+    border: 3px solid $borderColorMenuSide;
+    flex-direction: column;
+    border-radius: .8rem;
+    padding: 2rem;
+    align-self: flex-start;
+    width: 40rem;
+    a{
+        padding: {
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            right: 2rem;
+        };
+        justify-content: start;
+        align-items: center;
+        font-size: 2.5rem;
+        display: grid;
+        height: 6rem;
+    }
+}
+//Active links
+.active{
+    color: #0a58ca !important;
+    text-decoration: underline !important;
+}

@@ -1,0 +1,29 @@
+//Vars
+$borderColorContainerDuvidas:#858585;
+$container: 90%;
+//SCSS
+.containerDuvidas{
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+    width: inherit;
+    .containerDuvidasInner{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #858585;
+        border-radius: .5rem;
+        padding: 5rem 5rem;
+        width: $container;
+        h2, a{
+            color: #0E517D;
+            font-family: "Metropolis Bold";
+        }
+        h2{            
+            font-size: 5rem;
+            margin-bottom: 6rem;
+        }
+        a{
+            font-size: 3rem;
+        }
+    }
+}
