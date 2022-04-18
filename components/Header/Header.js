@@ -7,7 +7,7 @@ import Cotacao from './Cotacao/Orcamentos';
 //CSS Style
 import styles from './header.module.scss';
 
-const Header = () => {
+const Header = ({ hideSearchBar }) => {
     return (
         <header className={styles.containerHeader + " justify-content-center d-flex flex-column"}>
             <div className={styles.contatoHeader}>
@@ -15,10 +15,10 @@ const Header = () => {
             </div>
             <div className={styles.containerHeaderMain + " d-flex align-items-center justify-content-end"}>
                 <div className={styles.containerGridMain}>
-                    <Logo/>
-                    <Pesquisa/>
-                    <Login/>
-                    <Cotacao/>
+                    <Logo />
+                    { hideSearchBar ? null : <Pesquisa />}
+                    <Login />
+                    <Cotacao />
                 </div>
             </div>
         </header>
